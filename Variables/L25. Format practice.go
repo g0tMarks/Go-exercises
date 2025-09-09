@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fname := "Dalinar"
@@ -12,8 +14,7 @@ func main() {
 
 	// Don't touch above this line
 
-	userLog := fmt.Sprint("Name: FNAME LNAME, Age: AGE, Rate: MESSAGERATE, Is Subscribed: ISSUBSCRIBED, Message: MESSAGE")
-	fmt.Sprintf("Hi %s, your open rate is %.1f percent \n", name, openRate)
+	userLog := fmt.Sprintf("Name: %s %s, Age: %d, Rate: %0.1f, Is Subscribed: %t, Message: %s\n", fname, lname, age, messageRate, isSubscribed, message)
 
 	// Don't touch below this line
 
